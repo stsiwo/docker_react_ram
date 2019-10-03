@@ -3,5 +3,6 @@ WORKDIR ./app
 COPY ./ ./
 
 RUN ["npm", "install"]
+# CMD is executed when cotnainer is created
 CMD ["npm", "start"]
 
