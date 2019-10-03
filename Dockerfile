@@ -1,7 +1,7 @@
 FROM node:10.16-alpine as dev
 WORKDIR ./app
-COPY ./src ./
+COPY ./ ./
 
 RUN ["npm", "install"]
-RUN ["npm", "start"]
+CMD ["npm", "start"]
 
